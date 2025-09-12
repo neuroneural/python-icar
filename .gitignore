@@ -1,13 +1,3 @@
-*.tar
-*.sif
-*.png
-*.nii.gz
-.vscode/
-*.swp
-*.swo
-jobs/
-ica_torch/
-*.npy
-*.nii
-*.dat
-datasets/
+*egg-info*
+dist/
+*__pycache__*

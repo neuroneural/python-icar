@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ica-torch"
+version = "0.1.0"
+authors = [
+	{name = "Joanne Wardell", email = "joanne.wardell6@gmail.com"},
+]
+description = "Pytorch implementation of information guided (constrained) ICA"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+]
+
+dependencies = [
+	"torch",
+	"scipy",
+	"nibabel",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/neuroneural/ica-torch"
+"Bug Tracker" = "https://github.com/neuroneural/ica-torch/issues"
+
+[project.scripts]
+ica-torch = "gigICA_manualGradients:parse"
